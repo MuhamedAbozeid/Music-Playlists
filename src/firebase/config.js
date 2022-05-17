@@ -5,12 +5,12 @@ import 'firebase/compat/storage'
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDl_dXBSpHTc98ES0goALlEkPDuezJ6KuY",
-    authDomain: "music-playlists-7cfdd.firebaseapp.com",
-    projectId: "music-playlists-7cfdd",
-    storageBucket: "music-playlists-7cfdd.appspot.com",
-    messagingSenderId: "705365499131",
-    appId: "1:705365499131:web:4a77d45286fd1fe01de45e"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN ,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.VUE_MUSIC_APP_MESSAGING_SENDER_ID,
+    appId: process.env.VUE_MUSIC_APP_ID
   };
 
   firebase.initializeApp(firebaseConfig)
